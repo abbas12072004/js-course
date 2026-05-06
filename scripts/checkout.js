@@ -107,4 +107,6 @@ cartSummaryHTML+=`
   
 });
 
+document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
+
 
