@@ -64,9 +64,9 @@ function addToCart (productId) {
   
     let matchingItem;
 
-    cart.forEach((item) => {
-      if (productId === item.productId) {
-        matchingItem = item;
+    cart.forEach((cartItem) => {
+      if (productId === cartItem.productId) {
+        matchingItem = cartItem;
       }
     });
 
@@ -84,8 +84,8 @@ function addToCart (productId) {
 function updateCartQuantity () {
   
     let cartQuantity = 0;
-      cart.forEach((item) => {
-    cartQuantity += item.quantity;
+      cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
       });
     
 
